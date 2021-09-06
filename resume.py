@@ -1,5 +1,5 @@
 from typing import Optional
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, status
 from starlette.responses import RedirectResponse
 from pydantic import BaseModel
 import datetime
@@ -109,8 +109,9 @@ async def index() -> str:
 def healthcheck() -> dict:
     if OSCHECK == "linux":
         x = {"status": "ok", "platform": OSCHECK}
-    else:
-         x = {"status": "not ok", "platform": OSCHECK}
+    else:   
+        x = {"status": "not ok", "platform": OSCHECK}
+        raise HTTPException(status_code=500, detail="Not running on linux!")
     
     return x
 
