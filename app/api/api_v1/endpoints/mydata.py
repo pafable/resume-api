@@ -10,7 +10,8 @@ ME = {
 
     "background": "DevOps/SRE Engineer based in Boston! :D",
     "first_Name": "Philip",
-    "last_name": "Afable"
+    "last_name": "Afable",
+    "help": "Go to /docs"
 }
 
 JOBS_DATA = {
