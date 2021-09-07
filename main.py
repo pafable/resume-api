@@ -30,7 +30,7 @@ async def index() -> str:
 
 
 @app.get("/healthcheck")
-def healthcheck() -> dict:
+async def healthcheck() -> dict:
     if OSCHECK == "linux":
         x = {"status": "ok", "platform": OSCHECK}
     else:   
@@ -41,9 +41,9 @@ def healthcheck() -> dict:
 
 
 @app.get("/employments")
-def employments() -> dict:
+async def employments() -> dict:
     return JOBS_DATA
 
 @app.get("/education")
-def education() -> dict:
+async def education() -> dict:
     return EDU_DATA
