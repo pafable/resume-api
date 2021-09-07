@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.api_v1.api import router as api_router
+from api.api_v1.api import router as api_router
 from starlette.responses import RedirectResponse
 from mangum import Mangum
 
