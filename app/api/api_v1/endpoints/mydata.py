@@ -6,6 +6,12 @@ def employment_date(year: int, month: int) -> str:
 
     return z
 
+ME = {
+
+    "background": "DevOps/SRE Engineer based in Boston! :D",
+    "first_Name": "Philip",
+    "last_name": "Afable"
+}
 
 JOBS_DATA = {
 
