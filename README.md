@@ -3,15 +3,20 @@
 This is my resume as an API. This project uses FastApi.
 
 ## Endpoints
-- /healthcheck
-- /employments
-- /education
+
+- /api/v1/healthcheck
+- /api/v1/employments
+- /api/v1/education
+- /api/v1/whoami
 
 ## Important Python Libraries:
+
 - FastAPI
 - Uvicorn
+- Mangum
 
 ## Testing Locally
+
 ```
 uvicorn app.main:app --reload
 ```
