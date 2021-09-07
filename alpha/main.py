@@ -1,6 +1,6 @@
 from typing import Optional
 from mydata import JOBS_DATA, EDU_DATA
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException
 from starlette.responses import RedirectResponse
 from pydantic import BaseModel
 import sys

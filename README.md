@@ -13,5 +13,5 @@ This is my resume as an API. This project uses FastApi.
 
 ## Testing Locally
 ```
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
