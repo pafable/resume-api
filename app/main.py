@@ -3,7 +3,7 @@ from api.api_v1.api import router as api_router
 from starlette.responses import RedirectResponse
 from mangum import Mangum
 
-app = FastAPI()
+app = FastAPI(title="my api", root_path="/prod/")
 
 
 @app.get("/")
