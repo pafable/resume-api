@@ -7,7 +7,7 @@ app = FastAPI(title="my api", root_path="/prod/")
 
 
 @app.get("/")
-async def index() -> str:
+async def index() -> RedirectResponse:
     return RedirectResponse(url="/api/v1/whoami")
 
 app.include_router(api_router, prefix="/api/v1")

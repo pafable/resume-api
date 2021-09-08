@@ -3,9 +3,8 @@ import datetime
 
 def employment_date(year: int, month: int) -> str:
     z = datetime.date(year, month, 1)
-    z = z.strftime("%B %Y")
 
-    return z
+    return z.strftime("%B %Y")
 
 
 ME = {
